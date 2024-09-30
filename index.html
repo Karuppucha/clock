@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="mother teresa.jpeg">
+        <h1 id="currenttime"></h1>
+        <div class="quotes">
+            <p>Time Quotes...</p>
+            <h2>Yesterday is gone.Tomorrow has not yet come.<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We have only today.Let us begin<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-Mother Teresa</h2>
+        </div>
+
+    </div>
+    <script>
+        function displaytime(){
+        let time = document.getElementById("currenttime");
+        let d = new Date();
+        time.innerHTML = d.toLocaleTimeString();
+
+        }
+        setInterval(displaytime,1000)
+    </script>
+</body>
+</html>
